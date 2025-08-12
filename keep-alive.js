@@ -35,9 +35,9 @@ function pingServer() {
 // Ping every 10 minutes (600,000 milliseconds)
 const PING_INTERVAL = 10 * 60 * 1000;
 
-console.log(`🚀 Starting keep-alive service for ${RENDER_URL}`);
-console.log(`⏰ Will ping every ${PING_INTERVAL / 1000 / 60} minutes`);
-console.log(`📊 Health endpoint: ${HEALTH_ENDPOINT}`);
+console.log(` Starting keep-alive service for ${RENDER_URL}`);
+console.log(` Will ping every ${PING_INTERVAL / 1000 / 60} minutes`);
+console.log(` Health endpoint: ${HEALTH_ENDPOINT}`);
 
 // Initial ping
 pingServer();
@@ -47,6 +47,6 @@ setInterval(pingServer, PING_INTERVAL);
 
 // Keep the process alive
 process.on('SIGINT', () => {
-    console.log('\n🛑 Keep-alive service stopped');
+    console.log('\n Keep-alive service stopped');
     process.exit(0);
 });

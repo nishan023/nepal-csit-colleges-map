@@ -16,7 +16,7 @@ An interactive web map showing the locations and details of BSc CSIT colleges ac
 
 ## Demo
 
-[Live Demo](your-render-url-here)
+[Live Demo](https://nepal-csit-colleges-map.onrender.com)
 
 ## Technologies Used
 

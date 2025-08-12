@@ -24,18 +24,18 @@ app.get('/', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`📊 Health check available at http://localhost:${PORT}/health`);
-    console.log(`🌐 App available at http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
+    console.log(` Health check available at http://localhost:${PORT}/health`);
+    console.log(` App available at http://localhost:${PORT}`);
 });
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
-    console.log('🛑 SIGTERM received, shutting down gracefully');
+    console.log('SIGTERM received, shutting down gracefully');
     process.exit(0);
 });
 
 process.on('SIGINT', () => {
-    console.log('🛑 SIGINT received, shutting down gracefully');
+    console.log(' SIGINT received, shutting down gracefully');
     process.exit(0);
 });
