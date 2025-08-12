@@ -1,16 +1,28 @@
 {
   "name": "nepal-csit-colleges-map",
   "version": "1.0.0",
-  "description": "An interactive web map showing the locations and details of BSc CSIT colleges across Nepal, built with Leaflet.js.",
+  "description": "Interactive map of BSc CSIT colleges in Nepal",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "node app.js",
+    "keep-alive": "node keep-alive.js",
+    "ping": "node keep-alive.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "nepal",
+    "csit",
+    "colleges",
+    "map",
+    "leaflet",
+    "education"
+  ],
+  "author": "Nishan",
+  "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
